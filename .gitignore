@@ -1,0 +1,59 @@
+# VS Code directories
+.vscode/
+
+# Python virtual environment
+.venv/
+env/
+venv/
+__pycache__/
+
+# Compiled Python files
+*.py[cod]
+*.pyo
+*.pyc
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# OS files
+.DS_Store  # macOS
+Thumbs.db  # Windows
+
+# Build and distribution
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Others
+.idea/  # PyCharm IDE
+*.sqlite  # SQLite database
+*.csv  # CSV data files
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Development tools
+*.env  # Environment variables
+.env.*.local
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+
+# Ignore certain folder
+drafts/
+models/
