@@ -1,4 +1,4 @@
-# Using Computer Vision models to discern different noodle dishes
+# Using Computer Vision models to predict different types of noodle dishes
 
 For the uninitiated, [**Char Kway Teow**](https://en.wikipedia.org/wiki/Char_kway_teow) ("CKT") and [**KL Hokkien Mee**](https://thewoksoflife.com/malaysian-hokkien-mee/#:~:text=What%20is%20%E2%80%9CKL%E2%80%9D%20Hokkien%20Mee,I%20would%20skip%20this%20recipe!) ("KLHM") are famous noodle dishes in their respective countries - CKT can be found primarily in Singapore, while there are several variants of Hokkien Mee found in Malaysia. I'm only interested in the variant found in Kuala Lumpur (KL).  
 I've tasted them and they are both heavenly, although I'll attest that the latter is more sinful (more pork lard is used).  
@@ -17,3 +17,18 @@ This notebook is heavily inspired by Jeremy Howard's [kaggle notebook](https://w
         <figcaption>KL Hokkien Mee</figcaption>
     </figure>
 </div>
+
+# Results
+
+With just ~240 pictures (evenly split across CKT and KLHM) used as training data, the model (resnet34) performs relatively well after five epochs of fine-tuning: Error rate of 6.9% i.e. accuracy of 93.1%.
+
+![Alt text](image-2.png)
+
+fastai provides handy tools like generating confusion matrices to aid model interpretability:
+
+![Alt text](image.png)
+
+and an incredibly convenient data cleaning GUI that allows fixing of wrong labels or completing removing them: 
+
+![Alt text](image-1.png)
+
